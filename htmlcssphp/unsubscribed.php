@@ -17,7 +17,7 @@
   ini_set('display_errors', '1');
 
   DEFINE('DB_USERNAME', 'btcwarning');
-  DEFINE('DB_PASSWORD', 'P6iC2i7iNbn5Gci5yusheg6473ehu489eu8r');
+  DEFINE('DB_PASSWORD', 'P6iC2i7iNbn5Gci5');
   DEFINE('DB_HOST', '127.0.0.1:8889');
   DEFINE('DB_DATABASE', 'email_list');
 
