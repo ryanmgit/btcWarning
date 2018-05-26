@@ -10,7 +10,7 @@ def priceMailer(apikey, from_email, notification, periods, maxchng, direction, p
     
     try:
         #open connection to sql server
-        cnx = mysql.connector.connect(user='python', password='nDM3KQyRmpmFNgAAvvve7488474yggvg', host='127.0.0.1', database='email_list', port='8889')
+        cnx = mysql.connector.connect(user='python', password='nDM3KQyRmpmFNgAA', host='127.0.0.1', database='email_list', port='8889')
         cursor = cnx.cursor()
         
         #find emails at specified notification level
@@ -68,7 +68,7 @@ def rsiMailer(apikey, from_email, rsitoday, rsimeaning):
     
     try:
         #open connection to sql server
-        cnx = mysql.connector.connect(user='python', password='nDM3KQyRmpmFNgAAvvve7488474yggvg', host='127.0.0.1', database='email_list', port='8889')
+        cnx = mysql.connector.connect(user='python', password='nDM3KQyRmpmFNgAA', host='127.0.0.1', database='email_list', port='8889')
         cursor = cnx.cursor()
         
         #find needing rsi notification
@@ -117,7 +117,7 @@ def rsiMailer(apikey, from_email, rsitoday, rsimeaning):
 def confirmEmails(apikey, from_email):
     try:
         #open connection to sql server
-        cnx = mysql.connector.connect(user='python', password='nDM3KQyRmpmFNgAAvvve7488474yggvg', host='127.0.0.1', database='email_list', port='8889')
+        cnx = mysql.connector.connect(user='python', password='nDM3KQyRmpmFNgAA', host='127.0.0.1', database='email_list', port='8889')
         cursor = cnx.cursor()
         
         #find new emails to confirm
