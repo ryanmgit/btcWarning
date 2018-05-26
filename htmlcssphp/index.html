@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="btcstyle.css">
+</head>
+<body>
+<div class="background">
+<div class="fullform">
+	<div class="welcometext"> 
+		<p>Welcome to BTC Warning 
+		</p>
+	</div>
+
+	<form onSubmit="return validateForm();" action="submit.php" method="POST" name="submit">
+
+		<div class="email">
+			Please enter your email: 
+		<input type="text" size="32" name="emailinput" id="email">
+		</div>
+
+		<div class="options"> 
+			<p>Choose which warning(s) you would like to receive:
+			</p>
+			<div class="rsi"> 
+				<div class="rsitext">
+					Receive buy/sell warnings based on RSI: 
+				</div>
+				<div class="rsiradio">
+					<input type="radio" class= "rsiwarning" name="rsiwarning" value="1"> Yes
+					<input type="radio" class= "rsiwarning" name="rsiwarning" value="0"  checked> No
+				</div>
+			</div>
+
+			<div class="price">
+				<p>
+				Price increase over:
+				</p>
+				<div class="checkboxes">
+					<!-- define unchecked boxes as 0 -->
+					<input type="hidden" name="up5" value="0" />
+					<input type="hidden" name="up10" value="0" />
+					<input type="hidden" name="up15" value="0" />
+					<input type="hidden" name="up20" value="0" />
+					<input type="hidden" name="up25" value="0" />
+					<input type="hidden" name="up30" value="0" />
+					<input type="hidden" name="down5" value="0" />
+					<input type="hidden" name="down10" value="0" />
+					<input type="hidden" name="down15" value="0" />
+					<input type="hidden" name="down20" value="0" />
+					<input type="hidden" name="down25" value="0" />
+					<input type="hidden" name="down30" value="0" />
+
+						<div class="checkboxgroup">
+
+							<div class="checkbox">
+								&nbsp;&nbsp;5%:
+								<input type="checkbox" name="up5" value="1">
+							</div>
+							<div class="checkbox">
+								10%:
+								<input type="checkbox" name="up10" value="1">
+							</div>
+							<div class="checkbox">
+								15%:
+								<input type="checkbox" name="up15" value="1">
+							</div>
+						</div>
+						<div class="checkboxgroup">
+							<div class="checkbox">
+								20%:
+								<input type="checkbox" name="up20" value="1">
+							</div>
+							<div class="checkbox">
+								25%:
+								<input type="checkbox" name="up25" value="1">
+							</div>
+							<div class="checkbox">
+								30%:
+								<input type="checkbox" name="up30" value="1">
+							</div>
+						</div>
+				</div>
+					<p>
+					Price decrease over:
+					</p>
+
+				<div class="checkboxes"> 
+					<div class="checkboxgroup">
+
+						<div class="checkbox">
+							&nbsp;&nbsp;5%:
+							<input type="checkbox" name="down5" value="1">
+						</div>
+						<div class="checkbox">
+							10%:
+							<input type="checkbox" name="down10" value="1">
+						</div>
+						<div class="checkbox">
+							15%:
+							<input type="checkbox" name="down15" value="1">
+						</div>
+					</div>
+					<div class="checkboxgroup">
+						<div class="checkbox">
+							20%:
+							<input type="checkbox" name="down20" value="1">
+						</div>
+						<div class="checkbox">
+							25%:
+							<input type="checkbox" name="down25" value="1">
+						</div>
+						<div class="checkbox">
+							30%:
+							<input type="checkbox" name="down30" value="1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button">
+			<p>
+			<input type="submit" class="submit" value="Send Me Warnings">
+			<input type="reset" class="reset">
+		</div>
+		</p>
+	</form>
+</div>
+<script>
+//called by form submit and ensures valid email
+function validateForm(){
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(submit.emailinput.value)){
+		return (true);  }
+		else{ 
+    	alert("You have entered an invalid email address!");  
+    	return (false); 
+	}
+	if ( rsiwarning + up5 + up10 + up15 + up20 + up25 + up30 + down5 + down10 + down15 + down20 + down25 + down30 != 0){
+		return (true);  }
+		else{ 
+    	alert("You didnt select any warnings...");  
+    	return (false); 
+	}
+	}
+
+</script>
+</body>
+</html>
+

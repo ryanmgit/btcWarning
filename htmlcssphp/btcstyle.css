@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+}
+div.background {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(images/formbackground.png);
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+	overflow: auto;   
+	
+}
+div.fullform{
+	position: relative;
+	background-color: rgba(179, 182, 188, 0.9);
+    width: 56%;
+	padding: 6%;
+	border-radius: 50px;
+	display: inline-block;
+	font-size: 2vw;
+	margin: 5% 16% 5% 16%;
+	
+
+}
+div.welcometext{
+	text-align: center;
+	font-size: 3vw;
+}
+div.thanks{
+	font-size: 10vw;
+	text-align: center;
+}
+div.thanksform{
+	position: relative;
+	background-color: rgba(179, 182, 188, 0.9);
+  	top: 30%;
+	left: 20%;
+    width: 60%;
+	padding: 20px;
+	border-radius: 50px;	
+}
+div.email{
+	position: relative;
+	margin: 0% 0% 0% 0%;
+	height:5%;
+	
+}
+
+div.options{
+	position: relative; 
+	
+}
+div.rsi{
+	position: relative;
+	margin:0% 0% 0% 5%;
+}
+div.rsitext{
+	display: inline-block;
+}
+div.rsiradio{
+	display: inline-block;
+	margin:2% 0% 0% 5%;
+}
+div.price{
+	position: relative;
+	margin:0% 0% 0% 5%;
+}
+div.checkboxes{
+	position: relative;
+    left: 5%;
+	margin: auto;
+    display: inline-block;
+
+}
+div.checkboxgroup{
+	position: relative;
+	display: inline-block;
+	
+}
+div.checkbox{
+	position: relative;
+	font-size: 1.8vw;
+    display: inline-block;
+}
+div.button{
+	position: relative;
+	margin:0% 10% 0% 10%;
+    
+}
+
+div.pricetxt{
+	position: relative;
+	left:35%;
+	font-size: 1.45vw;
+	
+}
+div.unsubscribe{
+    position: fixed; 
+    width:5%;
+    left: 47.5%;
+    bottom: 0;
+    text-align:center;
+    
+     
+}
+input.submit{
+	width: 75%;
+	height: 15%;
+	font-size: 200%;
+	border-radius: 8px;
+	cursor: pointer;
+}
+input.reset{
+	width: 20%;
+	height: 15%;
+	font-size: 1vw;
+	border-radius: 8px;
+	cursor: pointer;
+	
+}
+input.rsiwarning{
+	left: 30%;
+
+}
+input[type=text] {
+	font-size: 1.8vw;
+	text-align: right;
+	padding:0.2%%;
+	float: right;
+	vertical-align: text-bottom;
+	
+}
+
+input[type=submit] {
+    background-color: rgb(249, 250, 252);
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+	background-color: rgb(255, 221, 0);
+}
+
+input[type=reset] {
+    background-color: rgb(249, 250, 252);
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+input[type=reset]:hover {
+	background-color: rgb(242, 96, 96);
+}

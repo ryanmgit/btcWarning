@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="btcstyle.css">
+</head>
+<body>
+<div class="background">
+<div class="fullform">
+	<div class="welcometext"> 
+		<p>Sorry to see you go :&#40; 
+		</p>
+	</div>
+
+	<form onSubmit="return validateForm();" action="unsubscribed.php" method="POST" name="submit">
+
+		<div class="email">
+			Please enter the email you would like to unsubscribe:
+			<p>
+			<input type="text" size="32" name="emailinput" id="email">
+			</p>
+		</div>
+		<br></br>
+        <div class="button">	
+			<input type="submit" class="submit" value="Unsubscribe">
+			<input type="reset" class="reset">
+        </div>
+		</p>
+	</form>
+</div>
+<script>
+//called by form submit and ensures valid email
+function validateForm(){
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(submit.emailinput.value)){
+		return (true);  }
+		else{ 
+    	alert("You have entered an invalid email address!");  
+    	return (false); 
+	}
+	}  
+
+</script>
+</body>
+</html>
