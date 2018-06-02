@@ -1,8 +1,6 @@
 # btcWarning
 
-The easiest way to run this program is using a containerized LAMP stack. This can be done using any container framework, however, a docker image has been provided for your convenience.
-
-Or if you hate youself a little bit you can always set it up manually as follows:
+A Flask based version of this program is in development, however, in the mean time it can be run 
 
  To run this demo natively on your personal computer a number of software packages must be installed. These
 instructions are tailored to mac users, however, it should be simple to adapt to any linux based OS.
@@ -63,19 +61,12 @@ CREATE TABLE `email_list`.`email_list` (
 
 4. Download and install ANACONDA from https://www.anaconda.com/download/#macos
 
-5. Now you must install the modules used by the python porthon of this program if you do
+5. Now you must install the modules used by the python portion of this program if you do
     not already have them:
     > Run the following on the command line:
 
-pip install requests
-pip install urllib3
-pip install chardet
-pip install mysql-connector-python-rf
-pip install deribit-api
-pip install pandas
-pip install pandas-datareader
-pip install numpy
-pip install TA-Lib
+pip3 install -r requirements.txt
+
 
 6. Using the SPYDER program within ANACONDA open the run_me.py file:
     > The top section contains options that can be modified by the user
@@ -84,7 +75,9 @@ pip install TA-Lib
       due to old data. It will take the program a short amount of time after startup to rebuild
       its price data to a usable level.
 
-7. Now use the web portal at localhost:8888 to enter emails and notification options
+7. This program uses an API email client to avoid issues caused by blocked email ports on many residential ISPs. Elastic Email
+
+8. Now use the web portal at localhost:8888 to enter emails and notification options
     into the program
 
 
